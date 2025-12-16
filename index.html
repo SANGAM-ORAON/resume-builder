@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="logo-1.png">
+  <title>MAGNAS | ATS Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="form">
+    <h2>ATS Resume Builder</h2>
+
+    <input id="name" placeholder="Full Name">
+    <input id="title" placeholder="Job Title (e.g. Frontend Developer)">
+    <input id="email" placeholder="Email">
+    <input id="phone" placeholder="Phone">
+    <input id="location" placeholder="City, Country">
+
+    <textarea id="summary" placeholder="Professional Summary (2 - 3 lines)"></textarea>
+
+    <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+
+    <textarea id="experience" placeholder="Experience (Use bullet points)"></textarea>
+
+    <textarea id="education" placeholder="Education"></textarea>
+
+    <button onclick="generateResume()">Generate</button>
+    <button onclick="saveData()">Save</button>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </div>
+
+  <!-- RESUME -->
+  <div class="resume" id="resume">
+    <h1 id="r-name">Your Name</h1>
+    <p class="title" id="r-title"></p>
+    <p class="contact" id="r-contact"></p>
+
+    <section>
+      <h3>Professional Summary</h3>
+      <p id="r-summary"></p>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <ul id="r-skills"></ul>
+    </section>
+
+    <section>
+      <h3>Professional Experience</h3>
+      <p id="r-experience"></p>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <p id="r-education"></p>
+    </section>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
