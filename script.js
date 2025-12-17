@@ -6,24 +6,35 @@ function generateResume() {
     document.getElementById("title").value;
 
   document.getElementById("r-contact").textContent =
-    `${email.value} | ${phone.value} | ${location.value}`;
+    `${document.getElementById("email").value} | ${document.getElementById("phone").value} | ${document.getElementById("location").value}`;
 
   document.getElementById("r-summary").textContent =
-    summary.value;
+    document.getElementById("summary").value;
 
   const skillsList = document.getElementById("r-skills");
   skillsList.innerHTML = "";
-  skills.value.split(",").forEach(skill => {
+  document.getElementById("skills").value.split(",").forEach(skill => {
     const li = document.createElement("li");
     li.textContent = skill.trim();
     skillsList.appendChild(li);
   });
 
-  document.getElementById("r-experience").textContent =
-    experience.value;
+  const experienceList = document.getElementById("r-experience");
+  experienceList.innerHTML = "";
+  document.getElementById("experience").value.split(",").forEach(exp => {
+    const li = document.createElement("li");
+    li.textContent = exp.trim();
+    experienceList.appendChild(li);
+  });
 
-  document.getElementById("r-education").textContent =
-    education.value;
+  const educationList = document.getElementById("r-education");
+  educationList.innerHTML = "";
+  document.getElementById("education").value.split(",").forEach(edu => {
+    const li = document.createElement("li");
+    li.textContent = edu.trim();
+    educationList.appendChild(li);
+  });
+
 }
 
 function saveData() {
