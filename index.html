@@ -17,15 +17,15 @@
     <input id="title" placeholder="Job Title (e.g. Frontend Developer)">
     <input id="email" placeholder="Email">
     <input id="phone" placeholder="Phone">
-    <input id="location" placeholder="City, Country">
+    <input id="location" placeholder="Location">
 
     <textarea id="summary" placeholder="Professional Summary (2 - 3 lines)"></textarea>
 
     <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
 
-    <textarea id="experience" placeholder="Experience (Use bullet points)"></textarea>
+    <textarea id="experience" placeholder="Experience (comma separated)"></textarea>
 
-    <textarea id="education" placeholder="Education"></textarea>
+    <textarea id="education" placeholder="Education (comma separated)"></textarea>
 
     <button onclick="generateResume()">Generate</button>
     <button onclick="saveData()">Save</button>
@@ -47,15 +47,15 @@
       <h3>Skills</h3>
       <ul id="r-skills"></ul>
     </section>
-
+    
     <section>
       <h3>Professional Experience</h3>
-      <p id="r-experience"></p>
+      <ul id="r-experience"></ul>
     </section>
-
+    
     <section>
       <h3>Education</h3>
-      <p id="r-education"></p>
+      <ul id="r-education"></ul>
     </section>
   </div>
 
