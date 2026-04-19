@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #3a3a3a;
+  background: #1a1a1a;
   margin: 0;
   padding: 16px;
 }
@@ -18,7 +18,7 @@ body {
 
 .form,
 .resume {
-  background: #b8b8b8;
+  background: #9c9c9c;
   padding: 20px;
   border-radius: 6px;
 }
